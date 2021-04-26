@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: "Slowstep-blog",
@@ -24,5 +26,16 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, "src/components")
+        },
+        extensions: [
+          "js"
+        ]
+      }
+    }
   ],
 };
