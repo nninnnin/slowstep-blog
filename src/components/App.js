@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     word-wrap: break-word;
     font-family: "Spoqa Han Sans Neo Light", "Dela Gothic One";
     font-size: 16px;
+    background-color: #fcdb03;
   }
 
   p {
@@ -26,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    color: green;
     font-family: "Dela Gothic One";
     font-weight: normal;
     font-size: 150px;
