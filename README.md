@@ -11,3 +11,7 @@ Todos
 2021년 4월
 
 - 내려가면서 로고 덮이는 스크롤 이벤트 추가 [ ]
+
+2021년 9월
+
+- Scroll Snap 적용 (https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) []
