@@ -1,1 +1,2 @@
-exports.COLOR_PRIMARY = "#ffcf24"
+exports.COLOR_PRIMARY_OFF_WHITE = "white";
+exports.COLOR_SECONDARY_YELLOW = "#ffcf24";

@@ -1,50 +1,79 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import { COLOR_PRIMARY } from "@constants/theme.js";
 
 const Container = styled.div`
-  background-color: #000000;
   position: fixed;
-  top: 400px;
-  left: 200px;
-  opacity: 0.5;
-  transition: 0.15s;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+  color: gainsboro;
+  background-color: violet;
+
+  max-height: 90vh;
+  overflow: auto;
 
   &:hover {
-    opacity: 1;
+    font-size: 5em;
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1500px) {
     top: inherit;
     left: 50%;
     bottom: 0;
     transform: translate(-50%, -30%);
-    width: 90vw;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
+  }
+
+  @media only screen and (max-width: 700px) {
+    width: 100vw;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 `;
 
 const NavItem = styled.div`
-  color: white;
   text-align: center;
   font-family: "Dela Gothic One";
   font-weight: normal;
   font-size: 2em;
   padding: 1em;
+  padding-bottom: 1.145em;
+  transition: 0.1s;
+
+  &:hover {
+    color: black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    color: black;
+  }
 `;
 
 const Text = styled.span`
-  cursor: pointer;
+  cursor: default;
+  user-select: none;
 `;
 
-function SideNav () {
+function SideNav() {
+  const handleScrollEvent = (e) => {
+    console.log(e);
+
+    e.stopPropagation();
+  };
+
   return (
-    <Container>
-      {['HoME', 'ArChivE', 'advisE'].map(el => {
-        return <NavItem>
-          <Text>{el}</Text>
+    <Container onScroll={handleScrollEvent}>
+      {["HoME", "ArChivE", "advisE"].map((el) => {
+        return (
+          <NavItem key={el}>
+            <Text>{el}</Text>
           </NavItem>
+        );
       })}
     </Container>
   );
