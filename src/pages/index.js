@@ -4,6 +4,7 @@ import styled from "styled-components";
 import App from "@components/App";
 import SideNav from "@components/SideNav";
 import Frame from "@components/Frame";
+import Video from "@components/Video";
 
 const Container = styled.div`
   text-align: center;
@@ -38,16 +39,6 @@ const Paragraph = styled.div`
   border: 2px solid darkgray;
 `;
 
-const Video = styled.iframe`
-  display: block;
-  width: 30vw;
-  height: 30vh;
-  border-radius: 10px;
-  /* max-width: 700px; */
-  /* height: 400px; */
-  /* height: auto; */
-`;
-
 const Link = styled.a``;
 
 function Index() {
@@ -77,6 +68,7 @@ function Index() {
   ];
 
   const videoSourceList = [
+    "https://www.youtube.com/embed/96g3Ujlwfos?t=12",
     "https://www.youtube.com/embed/ixoYCveTWXk?start=3076&disablekb=1&controls=0",
     "https://www.youtube.com/embed/-NHORIGmj94?controls=0",
     "https://www.youtube.com/embed/sScagBZxYyk?controls=0&amp;start=893",

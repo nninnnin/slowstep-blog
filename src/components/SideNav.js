@@ -7,14 +7,10 @@ const Container = styled.div`
   left: 10%;
   transform: translate(-10%, -50%);
   color: gainsboro;
-  background-color: violet;
+  background-color: #2b082b;
 
   max-height: 90vh;
   overflow: auto;
-
-  &:hover {
-    font-size: 5em;
-  }
 
   @media only screen and (max-width: 1500px) {
     top: inherit;

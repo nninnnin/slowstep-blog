@@ -16,9 +16,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
     margin: 0;
     padding: 0;
-    padding-bottom: 500px;
     word-wrap: break-word;
     font-family: "Spoqa Han Sans Neo Light", "Dela Gothic One";
     font-size: 16px;
