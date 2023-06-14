@@ -5,6 +5,7 @@ import App from "@components/App";
 import SideNav from "@components/SideNav";
 import Frame from "@components/Frame";
 import Video from "@components/Video";
+import videoSourceList from "../data/videos.json";
 
 const Container = styled.div`
   text-align: center;
@@ -60,21 +61,11 @@ function Index() {
 
   const scrappedPosts = [
     {
-      href: "https://www.thoughtworks.com/insights/blog/dividing-frontend-backend-antipattern",
+      href:
+        "https://www.thoughtworks.com/insights/blog/dividing-frontend-backend-antipattern",
       description:
         "Dividing frontend from backend is an antipattern - Rufus Raghunath (Mar 12, 2018)",
     },
-  ];
-
-  const videoSourceList = [
-    "https://www.youtube.com/embed/wjJ6prsX1lM?controls=0",
-    "https://www.youtube.com/embed/96g3Ujlwfos?t=12",
-    "https://www.youtube.com/embed/ixoYCveTWXk?start=3076&disablekb=1&controls=0",
-    "https://www.youtube.com/embed/-NHORIGmj94?controls=0",
-    "https://www.youtube.com/embed/sScagBZxYyk?controls=0&amp;start=893",
-    "https://www.youtube.com/embed/hwZGH2G_Gzo?controls=0",
-    "https://www.youtube-nocookie.com/embed/RgqZuPCZiq8?controls=0",
-    "https://www.youtube-nocookie.com/embed/yyQE-A9XDpQ?controls=0",
   ];
 
   return (
