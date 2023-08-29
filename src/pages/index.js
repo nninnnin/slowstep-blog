@@ -7,41 +7,6 @@ import Frame from "@components/Frame";
 import Video from "@components/Video";
 import videoSourceList from "../data/videos.json";
 
-const Container = styled.div`
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-
-  scroll-snap-type: y mandatory;
-`;
-
-const Logo = styled.h1`
-  font-family: "Dela Gothic One";
-  position: sticky;
-  top: 20px;
-
-  @media only screen and (max-width: 720px) {
-    font-size: 100px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    font-size: 50px;
-    color: white;
-  }
-`;
-
-const Paragraph = styled.div`
-  margin: 0 auto;
-  margin-bottom: 500px;
-  width: 100%;
-  max-width: 700px;
-  height: 400px;
-  border: 2px solid darkgray;
-`;
-
-const Link = styled.a``;
-
 function Index() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -91,5 +56,40 @@ function Index() {
     </App>
   );
 }
+
+const Container = styled.div`
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+
+  scroll-snap-type: y mandatory;
+`;
+
+const Logo = styled.h1`
+  font-family: "Dela Gothic One";
+  position: sticky;
+  top: 20px;
+
+  @media only screen and (max-width: 720px) {
+    font-size: 100px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 50px;
+    color: white;
+  }
+`;
+
+const Paragraph = styled.div`
+  margin: 0 auto;
+  margin-bottom: 500px;
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border: 2px solid darkgray;
+`;
+
+const Link = styled.a``;
 
 export default Index;
