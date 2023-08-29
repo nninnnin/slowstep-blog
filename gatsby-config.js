@@ -7,9 +7,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -33,10 +31,8 @@ module.exports = {
           "@components": path.resolve(__dirname, "src/components"),
           "@constants": path.resolve(__dirname, "src/constants"),
         },
-        extensions: [
-          "js"
-        ]
-      }
-    }
+        extensions: ["js"],
+      },
+    },
   ],
 };
