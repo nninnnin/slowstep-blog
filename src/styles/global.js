@@ -14,13 +14,20 @@ export default createGlobalStyle`
     src: url(${SpoqaHanSansNeoLight}) format('truetype');
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 
-    margin: 0;
-    padding: 0;
     word-wrap: break-word;
     font-family: "Spoqa Han Sans Neo Light", "Dela Gothic One";
     font-size: 16px;

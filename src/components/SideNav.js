@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: fixed;
-  top: 50%;
+  top: calc(50% - 32px);
   left: 10%;
   transform: translate(-10%, -50%);
   color: gainsboro;
