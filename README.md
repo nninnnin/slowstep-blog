@@ -8,8 +8,9 @@
 ### Todos
 
 - [x] 랜딩페이지 개발 후 배포
-- [x] Scroll Snap 적용 (https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type)
+- [x] Scroll Snap 적용
 
 ### Ideas
 
 - TV, 대화방
+- Cinema
